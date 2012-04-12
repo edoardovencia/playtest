@@ -1,1 +1,1 @@
-web: play run --%prod --http.port=$PORT -Dprecompiled=true
+web: target/start -Dhttp.port=$PORT -DapplyEvolutions.default=true
